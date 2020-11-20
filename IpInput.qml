@@ -40,8 +40,9 @@ Rectangle {
     id: root
     property string ip: "0.0.0.0"
     
-    width: 300
-    height: 40
+    implicitWidth: 300
+    implicitHeight: 40
+    border.color: "black"
     
     onIpChanged: {
         var array = ip.split(".", 4)
@@ -113,6 +114,7 @@ Rectangle {
                 horizontalAlignment: Text.AlignHCenter
                 focus: true
                 text: field
+                font.pixelSize: 18
                 
                 validator: RegExpValidator { regExp: /(2(5[0-5]|[0-4]\d))|[0-1]?\d{1,2}/ }
                 
@@ -156,6 +158,7 @@ Rectangle {
                 anchors.verticalCenter: parent.verticalCenter
                 visible: index != 0
                 text: "."
+                
             }
         }
         
