@@ -43,7 +43,7 @@ Rectangle {
         id: listView
         anchors.fill: parent
         model: listModel
-        orientation: ListView.LeftToRight
+        orientation: ListView.Horizontal
         
         ListModel {
             id: listModel
