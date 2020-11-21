@@ -1,6 +1,4 @@
-IpInput QtQuick_2_0/IpInput.qml
-IpInputDemo QtQuick_2_0/Demo/IpInputDemo.qml
-
+module IpInput
 IpInput 1.0 QtQuick_1_0/IpInput.qml
 IpInputDemo 1.0 QtQuick_1_0/Demo/IpInputDemo.qml
 
