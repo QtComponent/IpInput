@@ -11,8 +11,8 @@ Rectangle {
     id: root
     property string ip: "0.0.0.0"
     
-    implicitWidth: 300
-    implicitHeight: 40
+    width: 300
+    height: 40
     border.color: "black"
     
     onIpChanged: {
@@ -80,8 +80,8 @@ Rectangle {
             
             TextInput {
                 id: textInput
-                anchors.fill: parent
-                verticalAlignment: Text.AlignVCenter
+                width: parent.width
+                anchors.verticalCenter: parent.verticalCenter
                 horizontalAlignment: Text.AlignHCenter
                 focus: true
                 text: field

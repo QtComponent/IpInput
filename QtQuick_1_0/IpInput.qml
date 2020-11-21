@@ -80,8 +80,8 @@ Rectangle {
             
             TextInput {
                 id: textInput
-                anchors.fill: parent
-                verticalAlignment: Text.AlignVCenter
+                width: parent.width
+                anchors.verticalCenter: parent.verticalCenter
                 horizontalAlignment: Text.AlignHCenter
                 focus: true
                 text: field
