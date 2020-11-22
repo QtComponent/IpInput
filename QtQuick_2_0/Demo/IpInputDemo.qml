@@ -1,7 +1,7 @@
 import QtQuick 2.0
 import "../"
 
-Item {
+FocusScope {
 	width: 320
 	height: 240
 
@@ -17,6 +17,7 @@ Item {
 
 		IpInput {
 			id: ipInput
+			focus: true
 			ip: "6.6.6.6"
 		}	
 	}	
